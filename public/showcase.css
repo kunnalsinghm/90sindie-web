@@ -1,0 +1,66 @@
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;overflow:hidden;background:#3f9898;font-family:"Times New Roman",Times,serif;color:#000}
+#desk{position:absolute;inset:0 0 38px 0}
+#icons{position:absolute;top:14px;left:8px;display:flex;flex-direction:column;gap:22px}
+.ico{width:100px;text-align:center;color:#fff;font:14px Tahoma,Arial,sans-serif;cursor:pointer;user-select:none}
+.ico i{display:grid;place-items:center;width:54px;height:54px;margin:0 auto 4px;background:#fff;border:2px solid #000;font:900 34px "Playfair Display",serif;color:#000;font-style:normal;box-shadow:3px 3px #0006}
+.ico.sel span{background:#000080;outline:1px dotted #fff}
+.ico span{padding:0 2px}
+.b,#menu div{font:14px Tahoma,Arial,sans-serif}
+.bevel,.b{background:#c0c0c0;border:0;box-shadow:inset -1px -1px #000,inset 1px 1px #fff,inset -2px -2px #808080,inset 2px 2px #dfdfdf}
+.b{cursor:pointer;height:28px;padding:0 10px;color:#000}
+.b:active,.b.on{box-shadow:inset 1px 1px #000,inset -1px -1px #fff,inset 2px 2px #808080}
+#task{position:absolute;left:0;right:0;bottom:0;height:38px;padding:4px;display:flex;gap:6px;align-items:center;background:#c0c0c0;border-top:2px solid #fff;z-index:50}
+#tasks{flex:1;display:flex;gap:4px}
+#tasks .b{min-width:150px;text-align:left;background-image:repeating-conic-gradient(#c0c0c0 0 25%,#fff 0 50%);background-size:2px 2px}
+#tasks .b.on{background-color:#e0e0e0;font-weight:700}
+#tray{padding:4px 12px;font:14px Tahoma,Arial,sans-serif;box-shadow:inset 1px 1px #808080,inset -1px -1px #fff}
+#menu{position:absolute;left:4px;bottom:38px;width:220px;display:none;z-index:60;background:#c0c0c0;padding:3px;box-shadow:inset -1px -1px #000,inset 1px 1px #fff,inset -2px -2px #808080}
+#menu.open{display:block}
+#menu div{padding:10px 12px;cursor:pointer}
+#menu div:hover{background:#000080;color:#fff}
+.win{position:absolute;display:flex;flex-direction:column;padding:3px;background:#c0c0c0;box-shadow:inset -1px -1px #000,inset 1px 1px #dfdfdf,inset -2px -2px #808080,inset 2px 2px #fff}
+.win.hide{display:none}
+.win.max{inset:0 0 38px 0!important;width:auto!important;height:auto!important}
+.tbar{display:flex;align-items:center;gap:4px;height:22px;padding:2px 3px;background:#000080;color:#fff;font:700 14px "Playfair Display",serif;cursor:move;touch-action:none}
+.win:not(.act) .tbar{background:#808090;color:#d4d4d4}
+.tbar span{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tbar button{width:18px;height:16px;padding:0;border:0;font:700 11px/1 Arial;background:#c0c0c0;box-shadow:inset -1px -1px #000,inset 1px 1px #fff,inset -2px -2px #808080;cursor:pointer}
+.view{flex:1;overflow:auto;margin-top:3px;background:#fff;box-shadow:inset 1px 1px #808080,inset 2px 2px #000,inset -1px -1px #fff;padding:2px}
+.stat{display:flex;gap:2px;margin-top:3px;font:13px Tahoma,Arial,sans-serif}
+.stat div{padding:3px 6px;box-shadow:inset 1px 1px #808080,inset -1px -1px #fff}.stat div:first-child{flex:1}.stat div+div{width:30px}
+/* site */
+h1,h2,.nm,nav a{font-family:"Abril Fatface","Playfair Display",serif;font-weight:400;margin:0}
+h1{font-size:76px;line-height:1}
+h2{font-family:"Playfair Display",serif;font-weight:900;font-size:26px;margin:8px 0 14px}
+a{color:#0000ee}nav a{color:#4b1a8b;font-size:25px;text-transform:uppercase;display:block;margin:0 0 30px;font-family:"Playfair Display",serif;font-weight:900}
+nav a.sub{font-size:20px;margin:0 0 10px 40px}nav a.act::before{content:"o ";font-size:14px}
+nav .subs{margin:-12px 0 30px}
+.home{height:100%;min-height:520px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px}
+.home h1{font-size:92px}.home h2{font-size:42px;margin:6px 0 60px}
+.home .links a{font:900 27px "Playfair Display",serif;color:#4b1a8b;margin:0 20px;text-transform:uppercase}
+.page{display:grid;grid-template-columns:330px 1fr;gap:20px;padding:60px 60px 40px 56px;min-height:100%}
+.nm{font-size:56px;line-height:.9;margin-bottom:12px}.sc{font:900 30px "Playfair Display",serif;margin-bottom:80px}
+main{max-width:1300px;font-size:21px;line-height:1.4;padding-bottom:30px}
+main p{margin:0 0 16px}main li{margin:0 0 14px}
+.resume{display:flex;gap:20px;align-items:center;border-top:2px solid #000;border-bottom:2px solid #000;padding:20px 8px;margin-bottom:24px}
+.resume b{font:900 30px "Playfair Display",serif}.resume em{font-size:46px;font-style:normal}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}.head .r{text-align:right;font-weight:700}
+section{margin-bottom:34px}
+.card{display:flex;gap:26px;align-items:center;padding:30px 40px;margin-bottom:26px;border:2px solid #000;border-right-color:#808080;border-bottom-color:#808080;background:#fff;cursor:pointer}
+.card:hover{background:#e8e8e8}.card em{font-size:60px;font-style:normal}.card h1{font-size:60px}.card b{font:900 26px "Playfair Display",serif;letter-spacing:1px}
+.warn{background:#ffffcc;border:1px solid #888;padding:10px 14px;font-size:18px;margin:12px 0}
+.tag{display:inline-block;padding:1px 8px;margin:2px;border:1px solid #000;font-size:16px}
+.soc{display:flex;gap:12px;float:right}.soc a{display:grid;place-items:center;width:64px;height:64px;border:2px solid #000;color:#000;text-decoration:none;font:900 22px "Playfair Display",serif}
+label{display:block;font:900 22px "Playfair Display",serif;margin:18px 0 6px}label i{color:#c00;font-style:normal}
+input,textarea{width:100%;font:20px "Times New Roman",serif;padding:6px 8px;border:2px solid #808080;border-right-color:#ddd;border-bottom-color:#ddd;background:#fff}
+button.send{margin-top:20px;font:22px "Times New Roman",serif;padding:8px 36px;background:#808080;color:#fff;border:2px solid #444;cursor:pointer}
+.note{float:right;text-align:right;font:900 17px "Playfair Display",serif;margin-top:22px}#res{font-size:18px;margin-top:10px;min-height:24px}
+.credits{padding:16px;font:15px/1.5 Tahoma,Arial,sans-serif;background:#fff;height:100%}
+@media (max-width:800px){
+ #icons{flex-direction:row;flex-wrap:wrap;gap:6px;left:2px}.ico{width:78px;font-size:12px}
+ .win{inset:80px 0 38px 0!important;width:auto!important;height:auto!important}
+ .page{grid-template-columns:1fr;padding:20px}.nm{font-size:38px}.sc{margin-bottom:14px}
+ nav{display:flex;flex-wrap:wrap;gap:4px 18px}nav a,nav a.sub{font-size:16px;margin:0}nav .subs{display:none}
+ h1,.home h1{font-size:46px}.home h2{font-size:24px}main{font-size:18px}.soc{float:none;margin-bottom:10px}.head .r{text-align:left}
+}

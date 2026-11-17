@@ -1,0 +1,14 @@
+{
+  "name": "kunal-portfolio",
+  "version": "1.0.0",
+  "description": "Retro desktop-OS portfolio with an Express backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "engines": { "node": ">=18" }
+}
