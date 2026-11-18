@@ -1,66 +1,94 @@
+/* Windows XP (Luna) theme */
 *{box-sizing:border-box}
-html,body{margin:0;height:100%;overflow:hidden;background:#3f9898;font-family:"Times New Roman",Times,serif;color:#000}
-#desk{position:absolute;inset:0 0 38px 0}
-#icons{position:absolute;top:14px;left:8px;display:flex;flex-direction:column;gap:22px}
-.ico{width:100px;text-align:center;color:#fff;font:14px Tahoma,Arial,sans-serif;cursor:pointer;user-select:none}
-.ico i{display:grid;place-items:center;width:54px;height:54px;margin:0 auto 4px;background:#fff;border:2px solid #000;font:900 34px "Playfair Display",serif;color:#000;font-style:normal;box-shadow:3px 3px #0006}
-.ico.sel span{background:#000080;outline:1px dotted #fff}
-.ico span{padding:0 2px}
-.b,#menu div{font:14px Tahoma,Arial,sans-serif}
-.bevel,.b{background:#c0c0c0;border:0;box-shadow:inset -1px -1px #000,inset 1px 1px #fff,inset -2px -2px #808080,inset 2px 2px #dfdfdf}
-.b{cursor:pointer;height:28px;padding:0 10px;color:#000}
-.b:active,.b.on{box-shadow:inset 1px 1px #000,inset -1px -1px #fff,inset 2px 2px #808080}
-#task{position:absolute;left:0;right:0;bottom:0;height:38px;padding:4px;display:flex;gap:6px;align-items:center;background:#c0c0c0;border-top:2px solid #fff;z-index:50}
-#tasks{flex:1;display:flex;gap:4px}
-#tasks .b{min-width:150px;text-align:left;background-image:repeating-conic-gradient(#c0c0c0 0 25%,#fff 0 50%);background-size:2px 2px}
-#tasks .b.on{background-color:#e0e0e0;font-weight:700}
-#tray{padding:4px 12px;font:14px Tahoma,Arial,sans-serif;box-shadow:inset 1px 1px #808080,inset -1px -1px #fff}
-#menu{position:absolute;left:4px;bottom:38px;width:220px;display:none;z-index:60;background:#c0c0c0;padding:3px;box-shadow:inset -1px -1px #000,inset 1px 1px #fff,inset -2px -2px #808080}
+html,body{margin:0;height:100%;overflow:hidden;font:13px Tahoma,"Segoe UI",Verdana,sans-serif;color:#000;background:#5a7edc url(/bliss.jpg) center/cover no-repeat}
+#desk{position:absolute;inset:0 0 40px 0}
+#icons{position:absolute;top:12px;left:8px;display:flex;flex-direction:column;gap:14px}
+.ico{width:84px;text-align:center;cursor:default;user-select:none}
+.ico i{display:block;font-style:normal;font-size:38px;line-height:1.1;margin-bottom:3px;filter:drop-shadow(1px 2px 2px #0009)}
+.ico span{font:12px Tahoma,sans-serif;color:#fff;text-shadow:1px 1px 2px #000;padding:1px 3px}
+.ico.sel span{background:#316ac5;text-shadow:none}.ico.sel i{opacity:.75}
+/* taskbar */
+#task{position:absolute;left:0;right:0;bottom:0;height:40px;display:flex;align-items:stretch;z-index:50;background:linear-gradient(#245edb 0,#3f8cf3 9%,#245edb 18%,#245edb 92%,#1941a5 100%);border-top:1px solid #0b3fb8}
+#start{display:flex;align-items:center;gap:6px;padding:0 24px 0 12px;border:0;border-radius:0 14px 14px 0;cursor:pointer;color:#fff;background:linear-gradient(#5eb35f 0,#3c963f 12%,#368a39 88%,#2d6f2e 100%);box-shadow:inset -2px 0 3px #1b5a1d,inset 1px 1px 2px #8fd890,2px 0 4px #0006}
+#start i{font:italic 900 22px "Trebuchet MS",Tahoma,sans-serif;text-shadow:1px 1px 2px #0a3a0c;letter-spacing:.5px}
+#start:hover{filter:brightness(1.1)}#start:active{filter:brightness(.9)}
+#tasks{flex:1;display:flex;align-items:center;gap:4px;padding:0 8px;overflow:hidden}
+#tasks .b{height:28px;width:160px;max-width:100%;text-align:left;padding:0 10px;color:#fff;font:13px Tahoma,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border:1px solid #0d3aa6;border-radius:3px;background:linear-gradient(#4b8bf5,#3c78e6);cursor:pointer;box-shadow:inset 1px 1px 1px #8cb4f8}
+#tasks .b.on{background:#1e52b7;box-shadow:inset 1px 1px 3px #0a2a7a;font-weight:700}
+#tray{display:flex;align-items:center;padding:0 14px;color:#fff;font:12px Tahoma,sans-serif;background:linear-gradient(#0f8dea,#1290e8 20%,#0b6fd0);border-left:1px solid #0a2f8a;box-shadow:inset 1px 0 2px #5bb4f5}
+/* start menu */
+#menu{position:absolute;left:0;bottom:40px;width:min(400px,100vw);display:none;z-index:60;border:2px solid #0a3cb8;border-bottom:0;border-radius:8px 8px 0 0;overflow:hidden;box-shadow:3px 0 8px #0007;background:#fff}
 #menu.open{display:block}
-#menu div{padding:10px 12px;cursor:pointer}
-#menu div:hover{background:#000080;color:#fff}
-.win{position:absolute;display:flex;flex-direction:column;padding:3px;background:#c0c0c0;box-shadow:inset -1px -1px #000,inset 1px 1px #dfdfdf,inset -2px -2px #808080,inset 2px 2px #fff}
+.mh{display:flex;align-items:center;gap:10px;padding:8px 10px;background:linear-gradient(#1c63d6,#0b4ec4 60%,#0a46b3)}
+.mh i{display:grid;place-items:center;width:44px;height:44px;font-style:normal;font-size:28px;background:#fff;border:2px solid #fff;border-radius:5px}
+.mh b{color:#fff;font:700 18px "Trebuchet MS",Tahoma,sans-serif;text-shadow:1px 1px 2px #052a80}
+.mb{display:grid;grid-template-columns:1fr 1fr;border-top:2px solid #f0a14a}
+.ml{background:#fff;padding:6px 0}.mr{background:#d3e5fa;border-left:1px solid #95bdee;padding:6px 0}
+.mi{display:flex;align-items:center;gap:8px;padding:7px 10px;font:13px Tahoma,sans-serif;cursor:default}
+.ml .mi span{font-weight:700}.mi i{font-style:normal;font-size:24px}
+.mi:hover{background:#316ac5;color:#fff}
+.mf{padding:6px 10px;text-align:right;color:#fff;font:12px Tahoma,sans-serif;background:linear-gradient(#0f55c8,#0a3ea8)}
+/* windows */
+.win{position:absolute;display:flex;flex-direction:column;padding:0 3px 3px;background:#0054e3;border-radius:8px 8px 0 0;box-shadow:2px 3px 12px #0009,inset 0 0 0 1px #0831d9}
+.win.main{left:clamp(100px,9vw,150px);top:24px;right:clamp(12px,3vw,48px);bottom:52px}
 .win.hide{display:none}
-.win.max{inset:0 0 38px 0!important;width:auto!important;height:auto!important}
-.tbar{display:flex;align-items:center;gap:4px;height:22px;padding:2px 3px;background:#000080;color:#fff;font:700 14px "Playfair Display",serif;cursor:move;touch-action:none}
-.win:not(.act) .tbar{background:#808090;color:#d4d4d4}
-.tbar span{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.tbar button{width:18px;height:16px;padding:0;border:0;font:700 11px/1 Arial;background:#c0c0c0;box-shadow:inset -1px -1px #000,inset 1px 1px #fff,inset -2px -2px #808080;cursor:pointer}
-.view{flex:1;overflow:auto;margin-top:3px;background:#fff;box-shadow:inset 1px 1px #808080,inset 2px 2px #000,inset -1px -1px #fff;padding:2px}
-.stat{display:flex;gap:2px;margin-top:3px;font:13px Tahoma,Arial,sans-serif}
-.stat div{padding:3px 6px;box-shadow:inset 1px 1px #808080,inset -1px -1px #fff}.stat div:first-child{flex:1}.stat div+div{width:30px}
-/* site */
-h1,h2,.nm,nav a{font-family:"Abril Fatface","Playfair Display",serif;font-weight:400;margin:0}
-h1{font-size:76px;line-height:1}
-h2{font-family:"Playfair Display",serif;font-weight:900;font-size:26px;margin:8px 0 14px}
-a{color:#0000ee}nav a{color:#4b1a8b;font-size:25px;text-transform:uppercase;display:block;margin:0 0 30px;font-family:"Playfair Display",serif;font-weight:900}
-nav a.sub{font-size:20px;margin:0 0 10px 40px}nav a.act::before{content:"o ";font-size:14px}
-nav .subs{margin:-12px 0 30px}
-.home{height:100%;min-height:520px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px}
-.home h1{font-size:92px}.home h2{font-size:42px;margin:6px 0 60px}
-.home .links a{font:900 27px "Playfair Display",serif;color:#4b1a8b;margin:0 20px;text-transform:uppercase}
-.page{display:grid;grid-template-columns:330px 1fr;gap:20px;padding:60px 60px 40px 56px;min-height:100%}
-.nm{font-size:56px;line-height:.9;margin-bottom:12px}.sc{font:900 30px "Playfair Display",serif;margin-bottom:80px}
-main{max-width:1300px;font-size:21px;line-height:1.4;padding-bottom:30px}
-main p{margin:0 0 16px}main li{margin:0 0 14px}
-.resume{display:flex;gap:20px;align-items:center;border-top:2px solid #000;border-bottom:2px solid #000;padding:20px 8px;margin-bottom:24px}
-.resume b{font:900 30px "Playfair Display",serif}.resume em{font-size:46px;font-style:normal}
-.head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}.head .r{text-align:right;font-weight:700}
-section{margin-bottom:34px}
-.card{display:flex;gap:26px;align-items:center;padding:30px 40px;margin-bottom:26px;border:2px solid #000;border-right-color:#808080;border-bottom-color:#808080;background:#fff;cursor:pointer}
-.card:hover{background:#e8e8e8}.card em{font-size:60px;font-style:normal}.card h1{font-size:60px}.card b{font:900 26px "Playfair Display",serif;letter-spacing:1px}
-.warn{background:#ffffcc;border:1px solid #888;padding:10px 14px;font-size:18px;margin:12px 0}
-.tag{display:inline-block;padding:1px 8px;margin:2px;border:1px solid #000;font-size:16px}
-.soc{display:flex;gap:12px;float:right}.soc a{display:grid;place-items:center;width:64px;height:64px;border:2px solid #000;color:#000;text-decoration:none;font:900 22px "Playfair Display",serif}
-label{display:block;font:900 22px "Playfair Display",serif;margin:18px 0 6px}label i{color:#c00;font-style:normal}
-input,textarea{width:100%;font:20px "Times New Roman",serif;padding:6px 8px;border:2px solid #808080;border-right-color:#ddd;border-bottom-color:#ddd;background:#fff}
-button.send{margin-top:20px;font:22px "Times New Roman",serif;padding:8px 36px;background:#808080;color:#fff;border:2px solid #444;cursor:pointer}
-.note{float:right;text-align:right;font:900 17px "Playfair Display",serif;margin-top:22px}#res{font-size:18px;margin-top:10px;min-height:24px}
-.credits{padding:16px;font:15px/1.5 Tahoma,Arial,sans-serif;background:#fff;height:100%}
+.win.max{inset:0 0 40px 0!important;width:auto!important;height:auto!important;border-radius:0}
+.tbar{display:flex;align-items:center;gap:3px;height:30px;margin:0 -3px;padding:0 5px 0 8px;border-radius:8px 8px 0 0;color:#fff;cursor:default;touch-action:none;user-select:none;background:linear-gradient(#0997ff 0,#0053ee 8%,#0050ee 40%,#06f 88%,#06f 93%,#005bff 95%,#003dd7 96%,#003dd7)}
+.tbar span{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font:700 13px "Trebuchet MS",Tahoma,sans-serif;text-shadow:1px 1px #0f1089}
+.win:not(.act) .tbar{background:linear-gradient(#7697e7 0,#94afe8 8%,#7c9fe2 17%,#7b99e1 56%,#82a9e9 81%,#7b96e1 94%,#abbae3)}
+.win:not(.act){background:#6582d9}
+.tbar button{width:22px;height:22px;padding:0;border:1px solid #fff;border-radius:3px;color:#fff;font:700 12px/1 Tahoma,sans-serif;cursor:pointer;background:linear-gradient(135deg,#7aa2f7,#2a5fe0 55%,#2257d6);box-shadow:inset -1px -1px 2px #1a3fa5}
+.tbar button[data-a=x]{background:linear-gradient(135deg,#eb9a7e,#d9481e 55%,#c8381a)}
+.tbar button:hover{filter:brightness(1.12)}
+.view{flex:1;overflow:auto;background:#fff;container-type:inline-size;min-height:0}
+.view::-webkit-scrollbar{width:17px}.view::-webkit-scrollbar-track{background:#f3f1ec}
+.view::-webkit-scrollbar-thumb{background:linear-gradient(90deg,#c8d9fd,#aac4fb);border:1px solid #8fa7e0;border-radius:3px}
+.stat{display:flex;gap:2px;background:#ece9d8;font:12px Tahoma,sans-serif;padding:2px 0 0}
+.stat div{padding:3px 8px;border:1px solid;border-color:#aca899 #fff #fff #aca899}.stat div:first-child{flex:1}.stat div+div{width:28px}
+/* site content */
+h1,h2{font-family:"Trebuchet MS",Tahoma,sans-serif;margin:0}
+h1{font-size:clamp(26px,3vw,36px);line-height:1.1;color:#1c3f94}
+h2{font-size:18px;color:#4a6fb5;font-weight:700;margin:6px 0 14px}
+h1.s2{font-size:24px}h2.s2{font-size:14px;font-weight:400;color:#555}
+a{color:#0033cc}a:hover{color:#ff6600}
+.home{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:28px 16px;background:linear-gradient(#fff,#e3edff)}
+.home h1{font-size:clamp(30px,5.2vw,58px)}.home h2{font-size:clamp(15px,2vw,22px);margin:8px 0 34px;color:#3a6ea5}
+.home .links{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.home .links a,button.send,.soc a{display:inline-block;padding:7px 20px;font:13px Tahoma,sans-serif;color:#000;text-decoration:none;text-transform:capitalize;cursor:pointer;border:1px solid #003c74;border-radius:3px;background:linear-gradient(#fff,#ecebe5 86%,#d8d0c4)}
+.home .links a:hover,button.send:hover,.soc a:hover{box-shadow:inset 0 0 0 2px #f9b54a;color:#000}
+.page{display:grid;grid-template-columns:230px minmax(0,1fr);min-height:100%}
+aside{align-self:start;position:sticky;top:0;margin:14px;padding:14px;border-radius:6px;background:linear-gradient(#7ba2e7,#6375d6)}
+.nm{color:#fff;font:700 19px/1.15 "Trebuchet MS",sans-serif;text-shadow:1px 1px #3a4fb0}.sc{color:#dbe6ff;margin:2px 0 12px}
+nav{background:#d6dff7;border-radius:5px;padding:6px 8px}
+nav a{display:block;padding:5px 3px;color:#215dc6;font:13px Tahoma,sans-serif;text-decoration:none;text-transform:capitalize}
+nav a:hover{text-decoration:underline;color:#428eff}nav a.act{font-weight:700;color:#1c3f94}nav a.act::before{content:"▸ "}
+nav a.sub{padding-left:20px}nav .subs{margin:0 0 2px}
+main{padding:20px 28px 30px 10px;font:15px/1.55 Tahoma,"Segoe UI",sans-serif;max-width:1100px}
+main p{margin:0 0 12px}main li{margin:0 0 9px}main ul{padding-left:22px}
+section{margin-bottom:28px}
+.resume{display:flex;gap:14px;align-items:center;padding:10px 14px;margin-bottom:20px;border:1px solid #7f9db9;border-radius:6px;background:#f4f8ff}
+.resume em{font-size:30px;font-style:normal}.resume b{font:700 16px "Trebuchet MS",sans-serif;color:#1c3f94}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}.head .r{text-align:right;font-weight:700;font-size:13px}
+.head h1{font-size:28px}.head h2{font-size:15px;margin-bottom:10px}
+.card{display:flex;gap:18px;align-items:center;padding:16px 22px;margin-bottom:14px;border:1px solid #7f9db9;border-radius:6px;background:#fff;cursor:pointer}
+.card:hover{background:#eaf1ff;border-color:#316ac5}.card em{font-size:40px;font-style:normal}.card h1{font-size:26px}.card b{font-size:12px;letter-spacing:1px;color:#4a6fb5}
+.warn{background:#ffffe1;border:1px solid #000;border-radius:6px;padding:8px 12px;margin:10px 0;font-size:13px}
+.tag{display:inline-block;padding:1px 9px;margin:2px;border:1px solid #7f9db9;border-radius:10px;background:#f0f6ff;font-size:12px}
+.soc{display:flex;gap:6px;float:right}.soc a{width:44px;height:36px;padding:0;display:grid;place-items:center;font-weight:700;text-transform:none}
+label{display:block;font-weight:700;font-size:13px;margin:12px 0 4px}label i{color:#c00;font-style:normal}
+input,textarea{width:100%;font:14px Tahoma,sans-serif;padding:4px 6px;border:1px solid #7f9db9;background:#fff}
+input:focus,textarea:focus{outline:0;border-color:#316ac5;box-shadow:0 0 0 1px #316ac5}
+button.send{margin-top:14px;padding:6px 26px}
+.note{float:right;text-align:right;font-size:12px;margin-top:14px;max-width:55%}#res{font-size:13px;margin-top:8px;min-height:20px}
+.credits{padding:16px;font:13px/1.6 Tahoma,sans-serif;background:#fff;height:100%}
+@container (max-width:640px){
+ .page{grid-template-columns:1fr}aside{position:static;margin:10px}
+ main{padding:6px 14px 24px}.soc{float:none;margin-bottom:10px}.head .r{text-align:left}.note{float:none;max-width:none;text-align:left}
+ nav{display:flex;flex-wrap:wrap;gap:0 14px}nav .subs{display:flex;gap:0 10px}nav a.sub{padding-left:3px}
+}
 @media (max-width:800px){
- #icons{flex-direction:row;flex-wrap:wrap;gap:6px;left:2px}.ico{width:78px;font-size:12px}
- .win{inset:80px 0 38px 0!important;width:auto!important;height:auto!important}
- .page{grid-template-columns:1fr;padding:20px}.nm{font-size:38px}.sc{margin-bottom:14px}
- nav{display:flex;flex-wrap:wrap;gap:4px 18px}nav a,nav a.sub{font-size:16px;margin:0}nav .subs{display:none}
- h1,.home h1{font-size:46px}.home h2{font-size:24px}main{font-size:18px}.soc{float:none;margin-bottom:10px}.head .r{text-align:left}
+ #icons{flex-direction:row;flex-wrap:wrap;gap:4px;left:2px}.ico{width:72px}.ico i{font-size:30px}
+ .win,.win.main{left:4px!important;right:4px!important;top:84px!important;bottom:44px!important;width:auto!important;height:auto!important}
+ .win.max{top:0!important;left:0!important;right:0!important;bottom:40px!important}
+ #tasks .b{width:110px}
 }

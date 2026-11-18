@@ -1,0 +1,23 @@
+/* Desktop widgets, Paint, Task Manager, screensaver */
+#widgets{position:fixed;top:14px;right:14px;bottom:54px;width:236px;display:flex;flex-direction:column;gap:12px;z-index:5;pointer-events:none;overflow:hidden}
+body.wg .win.main{right:272px}
+.wd{pointer-events:auto;flex:none;border-radius:10px;border:1px solid #ffffffaa;background:linear-gradient(#ffffffd9,#d9e6ffd0);backdrop-filter:blur(6px);box-shadow:2px 3px 10px #0007;overflow:hidden;font:12px Tahoma,sans-serif;color:#102a6b}
+.wh{display:flex;justify-content:space-between;align-items:center;padding:4px 8px;cursor:move;user-select:none;touch-action:none;background:linear-gradient(#3f8cf3,#245edb);color:#fff;font:700 12px "Trebuchet MS",Tahoma,sans-serif}
+.wh button{border:0;background:none;color:#fff;cursor:pointer;opacity:.7;font-size:11px}.wh button:hover{opacity:1}
+.wb{padding:8px 10px;text-align:center}
+.wb svg{display:block;margin:0 auto 4px}.cd{font-weight:700}
+.wxb{display:flex;gap:10px;align-items:center;justify-content:center;text-align:left}.wxb span{font-size:34px}.wxb b{font-size:20px}
+.wb small{color:#4a6fb5}
+.stn{min-height:92px;text-align:left;white-space:pre-wrap;outline:0;background:#fff59d;color:#4a3b00;padding:8px;margin:-8px -10px;font:13px/1.4 "Comic Sans MS","Segoe Print",cursive}
+.wd.sticky .wb{background:#fff59d}
+.hn{font:900 30px "Trebuchet MS",sans-serif;color:#1c3f94;transition:opacity .4s}.hc{transition:opacity .4s;min-height:30px}.fade{opacity:0}
+.cdn{font:900 28px "Trebuchet MS",sans-serif;color:#1c3f94}
+@media (max-height:780px){.wd.opt{display:none}}
+@media (max-width:800px){#widgets{display:none!important}}
+.pt{display:flex;flex-wrap:wrap;gap:4px;align-items:center;padding:4px;background:#ece9d8;border-bottom:1px solid #aca899}
+.pp{display:flex;gap:2px}.pp i{width:20px;height:20px;border:2px solid;border-color:#808080 #fff #fff #808080;cursor:pointer}
+.pt .send{margin:0;padding:3px 10px}.pt select{font:12px Tahoma}
+.pw{flex:1;overflow:auto;background:#808080;padding:4px;min-height:100px}.pw canvas{background:#fff;display:block;touch-action:none;cursor:crosshair}
+.tml{flex:1;background:#fff;border:1px solid #7f9db9;margin:6px;overflow:auto;min-height:80px}.tml div{padding:3px 8px}.tml .sel{background:#316ac5;color:#fff}
+.tmh{padding:4px 10px;font-weight:700;background:#ece9d8}.tmb{display:flex;justify-content:flex-end;gap:6px;padding:0 6px 6px;background:#ece9d8}.tmb .send{margin:0;padding:4px 14px}
+#ss{position:fixed;inset:0;z-index:2000;background:#000;display:none;cursor:none}#ss.on{display:block}

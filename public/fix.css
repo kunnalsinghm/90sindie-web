@@ -1,0 +1,15 @@
+/* Layout fixes: icon columns, widgets under windows, window sizes */
+@media (min-width:801px){
+ #icons{bottom:10px;flex-wrap:wrap;align-content:flex-start;gap:6px 10px}
+ .win.main{left:calc(var(--ic,1)*94px + 16px);bottom:16px}
+}
+#widgets{position:absolute;top:14px;right:14px;bottom:14px;z-index:1}
+.win.max{inset:0!important;border-radius:0}
+.stn{min-height:92px;text-align:left;white-space:pre-wrap;outline:0;background:#fff59d;color:#4a3b00;padding:8px;margin:-8px -10px;font:13px/1.4 "Comic Sans MS","Segoe Print",cursive}
+body.wg #clip{right:276px}
+body.wg #bal,body.wg #upd{right:262px}
+@media (max-height:900px){.wb svg{width:96px;height:96px}.wb{padding:6px 8px}.wd{font-size:11px}}
+@media (max-width:800px){
+ .win,.win.main{top:84px!important;bottom:4px!important}
+ .win.max{inset:0!important}
+}

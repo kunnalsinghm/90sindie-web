@@ -1,5 +1,5 @@
 // ---- Edit these links ----
-const LINKS={linkedin:"#",github:"#",leetcode:"#",email:"mailto:singhkunal7934@gmail.com",resume:"/resume.pdf"};
+const LINKS={linkedin:"https://www.linkedin.com/in/kunal-sm-41a055285/",github:"https://github.com/kunnalsinghm",leetcode:"https://leetcode.com/u/kunalsinghm/",email:"mailto:singhkunal7934@gmail.com",resume:"/resume.pdf",resumeDrive:"https://drive.google.com/file/d/1Sukhq-yCGL8VNhISAT634i36eVOSoOLv/view?usp=drive_link"};
 const $=s=>document.querySelector(s);
 const li=a=>"<ul>"+a.map(x=>"<li>"+x+"</li>").join("")+"</ul>";
 const RES=`<div class="resume"><em>📄</em><div><b>Looking for my resume?</b><br><a href="${LINKS.resume}" target="_blank" rel="noopener">Click here to download it!</a></div></div>`;
@@ -26,23 +26,23 @@ experience:RES+`<section>${ROLE("Zoho","Software Development Engineer Intern",'<
 "<b>Performance &amp; reliability:</b> Cut load time by 40% with lazy loading and asset optimization; added Cloudflare CDN and edge caching to keep the platform reliable on unstable networks.",
 "<b>Infrastructure scale &amp; automation:</b> Cut reminder cron job runtime by 70% (50 to 15 minutes) by redesigning queries and moving to an asynchronous architecture; automated daily content with Cloudflare Cron Triggers for 800+ active users.",
 "<b>System architecture:</b> Co-developed SheetScope, a user-journey scraping engine on real-time Codeforces API integrations; led validation across 1,000+ edge-case test profiles to eliminate indexing errors."])}</section>
-<section><h1 style="font-size:54px">Education</h1><h2>National Institute of Technology Durgapur</h2><p>Bachelor of Technology in Computer Science · Aug 2023 – Apr 2027</p></section>`,
+<section><h1 class="s2">Education</h1><h2>National Institute of Technology Durgapur</h2><p>Bachelor of Technology in Computer Science · Aug 2023 – Apr 2027</p></section>`,
 projects:`<h1>Projects</h1><h2>&amp; Impact</h2><p>Click on one of the areas below to check out some of my favorite things I’ve built, led and created.</p>
 <div class="card" data-go="software"><em>🖥️</em><div><h1>Software</h1><b>PROJECTS</b></div></div>
 <div class="card" data-go="leadership"><em>🏆</em><div><h1>Leadership</h1><b>ACHIEVEMENTS</b></div></div>
 <div class="card" data-go="creator"><em>🎬</em><div><h1>Creator</h1><b>ENDEAVORS</b></div></div>`,
 software:`<h1>Software</h1><h2>Projects</h2>
-<section><h1 style="font-size:50px">Kivora</h1><h2 style="font-size:22px">Zuvoxia (Independent Venture) · AI Cost-Governance Platform · Aug 2026 – Present</h2>
+<section><h1 class="s2">Kivora</h1><h2 class="s2">Zuvoxia (Independent Venture) · AI Cost-Governance Platform · Aug 2026 – Present</h2>
 <p>Product Lead &amp; Developer, pre-launch.</p><div class="warn">⚠ Kivora Guard is built and tested in simulation. It isn’t verified on live providers, has no customers yet, and isn’t publicly available.</div>${li([
 "<b>Problem &amp; strategy:</b> Teams using multiple LLM providers lack visibility into AI spend and protection from runaway costs; defined buyer personas, a 3-stage roadmap (visibility → optimization → autonomy), and positioning against LLM gateways and cost-observability tools.",
 "<b>PRD &amp; validation:</b> Authored a 9-section PRD with 5 success metrics (e.g., cost per successful agent task, retry-cost ratio), scope, trade-offs, and risks; set stage gates (5–10 buyer interviews, paying-customer thresholds) so building follows validation.",
 "<b>Pricing:</b> Designed a 3-part model: Guard at $999–$2,500/month, Compass (AI model-downgrade recommendations) at 15–20% of verified savings against a baseline, and Autopilot as an enterprise add-on; framed as hypotheses to test with buyers.",
 "<b>Guard (core product):</b> Built a ∼36,000-line platform with an OpenAI/Anthropic-compatible streaming proxy, per-team budgets, and idempotent usage metering on schema-per-tenant PostgreSQL (700+ tests); load-tested ∼35,000 requests at up to 200 concurrency on 1 vCPU with 0 errors/0 dropped billing records; indexing cut budget-check latency 65% (∼40 ms to ∼14 ms)."])}</section>
-<section><h1 style="font-size:50px">Literary Circle Website</h1><h2 style="font-size:22px">LC NITD · Live · TypeScript, React, Next.js, GCP, Cloudflare</h2>${li([
+<section><h1 class="s2">Literary Circle Website</h1><h2 class="s2">LC NITD · Live · TypeScript, React, Next.js, GCP, Cloudflare</h2>${li([
 "<b>Product strategy &amp; growth:</b> Owned strategy and execution for the club’s flagship blog and registration portal: monthly visits up ∼40% (1,300–1,400 to 1,800–2,000) and 2,500+ registrations across 14 events, including NITMUN and Verve.",
 "<b>Gamification feature:</b> Launched a QR-based treasure hunt; defined the roadmap, onboarding, and live admin tracking for 500+ participants across 8 checkpoints in a 2–3 hour live event.",
 "<b>Funnel optimization:</b> Analyzed registration drop-offs and iterated on onboarding; added CDN caching, firewall rules, and rate limiting to cut latency and stay available during registration spikes."])}</section>
-<h1 style="font-size:44px">Skills</h1><p style="margin-top:10px">${["Python","Java","C++","JavaScript","TypeScript","SQL","Node.js","Express","React","Next.js","REST API Design","PostgreSQL","Docker","GCP","Git","CI/CD","LLM Cost Attribution","Semantic Caching","Model Routing","Multi-tenancy","Load Testing","Rate Limiting","Cloudflare","Roadmapping","PRDs","Product Discovery","Funnel Analysis","A/B Testing","GTM Strategy"].map(t=>`<span class="tag">${t}</span>`).join("")}</p>`,
+<h1 class="s2">Skills</h1><p style="margin-top:10px">${["Python","Java","C++","JavaScript","TypeScript","SQL","Node.js","Express","React","Next.js","REST API Design","PostgreSQL","Docker","GCP","Git","CI/CD","LLM Cost Attribution","Semantic Caching","Model Routing","Multi-tenancy","Load Testing","Rate Limiting","Cloudflare","Roadmapping","PRDs","Product Discovery","Funnel Analysis","A/B Testing","GTM Strategy"].map(t=>`<span class="tag">${t}</span>`).join("")}</p>`,
 leadership:`<h1>Leadership</h1><h2>Achievements &amp; Impact</h2>${li([
 "<b>PR &amp; Outreach Head, The Literary Circle:</b> Grew event participation 34% to ∼8,000 and social media views 25% (400K to 500K) in 2025–2026, leading cross-functional outreach across website, video, and design teams; several events drew up to 1,000 participants.",
 "<b>2nd Runner-Up, Rannit-E Case Study Competition:</b> Top 0.15% of 2,000 participants (top 3) in a business strategy case.",
@@ -62,7 +62,7 @@ contact:`<div class="soc"><a href="${LINKS.github}" target="_blank" rel="noopene
 <div style="clear:both;margin-top:30px">${RES}</div>`};
 
 const NAV=[["home","Home"],["about","About"],["experience","Experience"],["projects","Projects",["software","leadership","creator"]],["contact","Contact"]];
-const FAM=p=>["software","leadership","creator"].includes(p)?"projects":p;
+const FAM=p=>{const n=NAV.find(x=>x[2]&&x[2].includes(p));return n?n[0]:p};
 let page="home",showcase;
 
 function render(p){
@@ -70,7 +70,7 @@ function render(p){
  const v=showcase.view;
  if(page==="home"){v.innerHTML=`<div class="home"><h1>Kunal Singh Munda</h1><h2>Developer. Filmmaker. Athlete. Creator.</h2><div class="links">${["about","experience","projects","contact"].map(x=>`<a href="#" data-go="${x}">${x}</a>`).join("")}</div></div>`}
  else{
-  const nav=NAV.map(([id,t,subs])=>`<a href="#" data-go="${id}" class="${FAM(page)===id&&!subs?"act":FAM(page)===id?"act":""}">${t}</a>`+(subs&&FAM(page)==="projects"?`<div class="subs">${subs.map(s=>`<a href="#" class="sub ${s===page?"act":""}" data-go="${s}">${s}</a>`).join("")}</div>`:"")).join("");
+  const nav=NAV.map(([id,t,subs])=>`<a href="#" data-go="${id}" class="${FAM(page)===id&&!subs?"act":FAM(page)===id?"act":""}">${t}</a>`+(subs&&FAM(page)===id?`<div class="subs">${subs.map(s=>`<a href="#" class="sub ${s===page?"act":""}" data-go="${s}">${s}</a>`).join("")}</div>`:"")).join("");
   v.innerHTML=`<div class="page"><aside><div class="nm">Kunal Singh Munda</div><div class="sc">Showcase ’26</div><nav>${nav}</nav></aside><main>${P[page]}</main></div>`;
  }
  v.scrollTop=0;
@@ -89,9 +89,9 @@ function render(p){
 
 let z=10;const wins={};
 function mk(id,title,body,o={}){
- const el=document.createElement("div");el.className="win";
+ const el=document.createElement("div");el.className="win"+(o.cls?" "+o.cls:"");
  Object.assign(el.style,o.style||{});
- el.innerHTML=`<div class="tbar"><span>🗔 ${title}</span><button data-a="min" aria-label="Minimize">_</button><button data-a="max" aria-label="Maximize">□</button><button data-a="x" aria-label="Close">✕</button></div><div class="view">${body||""}</div>${o.status?`<div class="stat"><div>${o.status}</div><div></div><div></div></div>`:""}`;
+ el.innerHTML=`<div class="tbar"><span>${o.icon||"🖥️"} ${title}</span><button data-a="min" aria-label="Minimize">_</button><button data-a="max" aria-label="Maximize">□</button><button data-a="x" aria-label="Close">✕</button></div><div class="view">${body||""}</div>${o.status?`<div class="stat"><div>${o.status}</div><div></div><div></div></div>`:""}`;
  $("#desk").appendChild(el);
  const btn=document.createElement("button");btn.className="b";btn.textContent=title;$("#tasks").appendChild(btn);
  const w=wins[id]={el,btn,view:el.querySelector(".view")};
@@ -106,26 +106,29 @@ function mk(id,title,body,o={}){
  const tb=el.querySelector(".tbar");tb.ondblclick=()=>el.classList.toggle("max");
  tb.addEventListener("pointerdown",e=>{
   if(e.target.tagName==="BUTTON"||el.classList.contains("max")||innerWidth<=800)return;
-  const sx=e.clientX-el.offsetLeft,sy=e.clientY-el.offsetTop;tb.setPointerCapture(e.pointerId);
+  el.style.width=el.offsetWidth+"px";el.style.height=el.offsetHeight+"px";const sx=e.clientX-el.offsetLeft,sy=e.clientY-el.offsetTop;tb.setPointerCapture(e.pointerId);
   const mv=ev=>{el.style.left=Math.max(0,ev.clientX-sx)+"px";el.style.top=Math.max(0,ev.clientY-sy)+"px";el.style.right="auto";el.style.bottom="auto"};
-  const up=()=>{tb.removeEventListener("pointermove",mv);tb.removeEventListener("pointerup",up)};
+  const up=ev=>{tb.removeEventListener("pointermove",mv);tb.removeEventListener("pointerup",up);window.snapWin&&snapWin(el,ev)};
   tb.addEventListener("pointermove",mv);tb.addEventListener("pointerup",up)});
  act();return w;
 }
 function openWin(id,page){const w=wins[id];w.btn.style.display="";w.focus();if(page)render(page)}
 
-showcase=mk("show","Kunal Singh Munda - Showcase 2026","",{status:"© Copyright 2026 Kunal Singh Munda",style:{left:"70px",top:"32px",right:"55px",bottom:"46px"}});
-mk("cred","Credits","",{style:{left:"22%",top:"20%",width:"460px",height:"260px"}}).view.innerHTML=`<div class="credits"><b>Credits</b><br><br>Design inspired by Henry Heffernan’s portfolio (os.henryheffernan.com).<br>Built by Kunal Singh Munda with HTML, CSS, JavaScript and Express.</div>`;
+showcase=mk("show","Kunal Singh Munda - Showcase 2026","",{status:"© Copyright 2026 Kunal Singh Munda",cls:"main",icon:"🗂️"});
+mk("cred","Credits","",{icon:"ℹ️",style:{left:"22%",top:"20%",width:"min(460px,92vw)",height:"240px"}}).view.innerHTML=`<div class="credits"><b>Credits</b><br><br>Built by Kunal Singh Munda with HTML, CSS, JavaScript and Express.</div>`;
 wins.cred.el.classList.add("hide");wins.cred.btn.style.display="none";
 render(location.hash.slice(1)||"home");
 
-const ITEMS=[["K","My Showcase",()=>openWin("show")],["⚙","Kivora",()=>openWin("show","software")],["📄","Resume",()=>window.open(LINKS.resume,"_blank")],["i","Credits",()=>openWin("cred")]];
+const ITEMS=[["🗂️","My Showcase",()=>openWin("show")],["📊","Kivora",()=>openWin("show","software")],["📄","Resume",()=>window.apps&&apps.resume?apps.resume():window.open(LINKS.resume,"_blank")],["ℹ️","Credits",()=>openWin("cred")]];
 ITEMS.forEach(([g,t,f])=>{
  const d=document.createElement("div");d.className="ico";d.innerHTML=`<i>${g}</i><span>${t}</span>`;
  d.onclick=()=>{document.querySelectorAll(".ico").forEach(x=>x.classList.remove("sel"));d.classList.add("sel");if(matchMedia("(pointer:coarse)").matches||innerWidth<=800)f()};
  d.ondblclick=f;$("#icons").appendChild(d);
- const m=document.createElement("div");m.textContent=t;m.onclick=()=>{$("#menu").classList.remove("open");f()};$("#menu").appendChild(m);
 });
+$("#menu").innerHTML='<div class="mh"><i>🧑‍💻</i><b>Kunal Singh Munda</b></div><div class="mb"><div class="ml"></div><div class="mr"></div></div><div class="mf">Showcase ’26</div>';
+const addMenu=(col,g,t,f)=>{const m=document.createElement("div");m.className="mi";m.innerHTML=`<i>${g}</i><span>${t}</span>`;m.onclick=()=>{$("#menu").classList.remove("open");f()};$("#menu .m"+col).appendChild(m)};
+ITEMS.forEach(([g,t,f])=>addMenu("l",g,t,f));
+[["👤","About Me","about"],["💼","Experience","experience"],["📁","Projects","projects"],["✉️","Contact","contact"]].forEach(([g,t,pg])=>addMenu("r",g,t,()=>openWin("show",pg)));
 $("#start").onclick=e=>{e.stopPropagation();$("#menu").classList.toggle("open")};
 document.addEventListener("pointerdown",e=>{if(!$("#menu").contains(e.target)&&!$("#start").contains(e.target))$("#menu").classList.remove("open")});
 const tick=()=>$("#time").textContent=new Date().toLocaleTimeString([],{hour:"numeric",minute:"2-digit"});tick();setInterval(tick,20000);

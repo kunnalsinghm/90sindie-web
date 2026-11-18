@@ -1,0 +1,48 @@
+/* More apps: documents, messenger, media player, games, explorer, themes */
+#icons{gap:6px}.ico i{font-size:30px}.ico span{font-size:11px}
+.mi{padding:5px 10px}.mb{max-height:calc(100vh - 150px);overflow-y:auto}
+:focus-visible{outline:2px dotted #316ac5;outline-offset:1px}.ico:focus-visible span{outline:1px dotted #fff}
+.frm{flex:1;border:0;width:100%;background:#fff}.mbar a{margin-left:auto;color:#000}
+.doc{flex:1;overflow:auto;background:#808080;padding:14px}
+.paper{background:#fff;max-width:760px;margin:0 auto;padding:30px 44px;font:14px/1.6 "Times New Roman",serif;box-shadow:2px 2px 6px #0006;color:#000}
+.paper h1{font:700 26px Arial,sans-serif;color:#1f3864;margin:0 0 4px}.paper h2{font:700 17px Arial,sans-serif;color:#2e5496;margin:20px 0 6px;border-bottom:1px solid #b4c6e7}
+.paper .sub{color:#555;margin-bottom:12px}.paper table{border-collapse:collapse;width:100%;margin:8px 0}.paper td,.paper th{border:1px solid #888;padding:4px 8px;text-align:left;font-size:13px}.paper th{background:#d9e2f3}
+.paper .warn{font:13px Tahoma,sans-serif}
+.msn{flex:1;display:flex;flex-direction:column;min-height:0;background:#fff}
+.msh{padding:8px 12px;background:linear-gradient(#e8f1ff,#c9dcff);border-bottom:1px solid #7f9db9;font-size:12px}.msh b{font-size:14px;color:#1c3f94}
+.msl{flex:1;overflow:auto;padding:10px;font-size:13px;line-height:1.5;min-height:80px}.msl p{margin:0 0 8px}.msl .who{color:#777;font-size:11px}.msl .you .who{color:#1c3f94}
+.msq{display:flex;flex-wrap:wrap;gap:5px;padding:8px;background:#ece9d8;border-top:1px solid #aca899;max-height:42%;overflow:auto}
+.msq button,.msf button{font:12px Tahoma;padding:4px 10px;border:1px solid #003c74;border-radius:3px;background:linear-gradient(#fff,#ecebe5 86%,#d8d0c4);cursor:pointer}
+.msf{padding:6px 8px;background:#d6dff7;text-align:right}
+.wmp{flex:1;display:flex;background:#101028;color:#cde;min-height:0}.wscr{flex:1;display:grid;place-items:center;background:#000;text-align:center;min-width:0}
+.wscr iframe,.wscr video{width:100%;height:100%;border:0}.wempty{font-size:40px;color:#7fb2ff}.wempty small{display:block;font-size:12px;color:#9ab;padding:0 20px;margin-top:8px}
+.wpl{width:170px;padding:8px;background:linear-gradient(#1a2a5e,#0d1633);overflow:auto;font-size:12px}.wli div{padding:4px 6px;cursor:pointer}.wli div:hover,.wli .on{background:#316ac5;color:#fff}
+.exh{display:flex;gap:6px;align-items:center;padding:4px;background:#ece9d8;border-bottom:1px solid #aca899}.exh button{font:12px Tahoma;padding:3px 10px}.exh input{flex:1;font:12px Tahoma;padding:3px;margin:0}
+.fl{flex:1;display:flex;flex-wrap:wrap;align-content:flex-start;gap:6px;padding:10px;background:#fff;overflow:auto}
+.fi{width:96px;text-align:center;font-size:12px;padding:6px;cursor:default;user-select:none}.fi i{display:block;font-size:34px;font-style:normal}.fi:hover{background:#d6e4ff}.fi.sel{background:#316ac5;color:#fff}
+.iepg{flex:1;overflow:auto;padding:22px;background:linear-gradient(#fff,#e3edff)}.iepg h1{font-size:26px;margin-bottom:12px}.iepg a{display:block;margin:6px 0;font-size:15px}
+.bl{flex:1;display:flex;min-height:0}.bll{width:200px;overflow:auto;background:#f4f8ff;border-right:1px solid #7f9db9}.bll div{padding:8px 10px;cursor:pointer;font-size:13px}.bll .on,.bll div:hover{background:#316ac5;color:#fff}
+.blr{flex:1;overflow:auto;padding:16px 20px;font:14px/1.6 Georgia,serif;background:#fff}.blr h2{font:700 20px "Trebuchet MS",sans-serif;color:#1c3f94;margin:0 0 4px}.blr small{color:#777}
+.oe{flex:1;display:flex;flex-direction:column;background:#ece9d8;padding:8px;gap:4px;min-height:0;overflow:auto}.oe label{margin:4px 0 0;font-size:12px}.oe textarea{flex:1;min-height:100px;resize:none}.oe .send{margin:6px 0 0;align-self:flex-start}
+.thm{padding:14px;background:#ece9d8;flex:1;font-size:13px}.thm .tb2{display:flex;gap:10px;margin:10px 0 16px}.thm .tb2 button{flex:1;height:60px;border:2px solid #fff;border-radius:4px;cursor:pointer;font:700 12px Tahoma;color:#fff;text-shadow:1px 1px #0008}
+body.th-silver{--t1:#e8e8f2;--t2:#a0a0bb;--tf:#9e9eb9;--tk1:#e2e2ec;--tk2:#b5b5c9;--tt:#000}
+body.th-olive{--t1:#b7c88a;--t2:#778d47;--tf:#6b8040;--tk1:#a3b573;--tk2:#667b3a;--tt:#fff}
+body.th-silver .tbar,body.th-olive .tbar{background:linear-gradient(var(--t1),var(--t2))}
+body.th-silver .tbar span{color:#000;text-shadow:none}
+body.th-silver .win,body.th-olive .win{background:var(--tf)}
+body.th-silver .win:not(.act) .tbar,body.th-olive .win:not(.act) .tbar{opacity:.75}
+body.th-silver #task,body.th-olive #task{background:linear-gradient(var(--tk1),var(--tk2))}
+body.th-silver #tasks .b,body.th-olive #tasks .b{background:linear-gradient(var(--tk1),var(--tk2));color:var(--tt);border-color:var(--t2)}
+body.th-silver #tasks .b.on,body.th-olive #tasks .b.on{background:var(--tf)}
+body.th-silver #tray,body.th-olive #tray{background:var(--tk2);color:var(--tt)}
+body.th-silver .mh,body.th-silver .mf,body.th-olive .mh,body.th-olive .mf{background:linear-gradient(var(--t1),var(--t2))}
+body.th-silver .mh b,body.th-silver .mf button{color:#000;text-shadow:none}
+body.th-silver aside,body.th-olive aside{background:linear-gradient(var(--t1),var(--t2))}
+#alt{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:1500;display:flex;gap:6px;padding:12px;background:#ece9d8;border:2px solid #0a3cb8;border-radius:8px;box-shadow:0 0 14px #000a}
+#alt div{padding:10px 14px;font:13px Tahoma;border:2px solid transparent;border-radius:4px}#alt .on{border-color:#316ac5;background:#d6e4ff}
+#bsod{position:fixed;inset:0;z-index:3000;background:#0000aa;color:#fff;padding:5vh 6vw;cursor:none}#bsod pre{font:16px/1.4 "Lucida Console",monospace;white-space:pre-wrap}
+#upd{position:fixed;right:14px;bottom:54px;width:300px;z-index:85;background:#ece9d8;border:2px solid #0a3cb8;border-radius:8px;overflow:hidden;box-shadow:2px 3px 10px #0008;font:12px Tahoma}
+#upd .sh{padding:6px 10px;background:linear-gradient(#0997ff,#0050ee);color:#fff;font:700 13px "Trebuchet MS",sans-serif}#upd .ub{padding:10px 12px}#upd p{margin:0 0 8px}.uf{text-align:right}.uf .send{margin:0;padding:3px 12px}
+.up{height:16px;border:1px solid #7f9db9;background:#fff;margin-bottom:8px;display:none}.up i{display:block;height:100%;width:0;background:repeating-linear-gradient(90deg,#2ec54b 0 8px,#fff 8px 10px);transition:width 3s linear}
+@media (pointer:coarse){.tbar button{width:30px;height:28px}.mi{padding:10px}#tasks .b{height:32px}}
+@media (max-width:800px){.bl{flex-direction:column}.bll{width:auto;max-height:90px;border-right:0;border-bottom:1px solid #7f9db9}.wmp{flex-direction:column}.wpl{width:auto;max-height:90px}}

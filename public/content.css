@@ -1,0 +1,29 @@
+/* Styles for the expanded content */
+.lead{font-size:17px}
+.facets{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:14px 0}
+.facets div{border:1px solid #7f9db9;border-radius:6px;padding:10px 12px;background:#f4f8ff;cursor:pointer}.facets div:hover{background:#eaf1ff;border-color:#316ac5}
+.facets b{display:block;color:#1c3f94;margin-bottom:4px;font-size:15px}.facets span{display:block;font-size:13px;line-height:1.45}
+.proj{border:1px solid #7f9db9;border-radius:6px;padding:14px 16px;margin:0 0 16px;background:#fff}
+.proj .ph2{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.proj h3{margin:0;font:700 19px "Trebuchet MS",sans-serif;color:#1c3f94}
+.proj .sub{color:#555;font-size:13px;margin:2px 0 8px}
+.bdg{display:inline-block;padding:1px 9px;border-radius:10px;font:700 11px Tahoma,sans-serif;border:1px solid}
+.bd-ok{background:#e3f6e3;border-color:#2e8b2e;color:#1b5e1b}.bd-warn{background:#fff4d6;border-color:#c88a00;color:#7a5200}.bd-info{background:#e3eeff;border-color:#316ac5;color:#1c3f94}
+.films{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.fg{margin:0}.fg figcaption{padding-top:6px;font-size:13px}
+.film{position:relative;aspect-ratio:16/9;background:#000;border:1px solid #7f9db9;border-radius:6px;overflow:hidden;cursor:pointer}
+.film img{width:100%;height:100%;object-fit:cover;display:block;opacity:.92}.film:hover img{opacity:1}
+.film .play{position:absolute;inset:0;display:grid;place-items:center;font-size:46px;color:#fff;text-shadow:0 0 10px #000}
+.film iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:14px 0}
+.stats div{text-align:center;padding:10px 6px;border:1px solid #7f9db9;border-radius:6px;background:#f4f8ff;font-size:12px}
+.stats b{display:block;font:900 22px "Trebuchet MS",sans-serif;color:#1c3f94}
+.gal{columns:3 190px;column-gap:10px}.gal figure{margin:0 0 10px;break-inside:avoid}.gal img{width:100%;height:auto;display:block;border:1px solid #7f9db9;cursor:zoom-in}.gal figcaption{font-size:12px;color:#555;padding-top:3px}
+#lb{position:fixed;inset:0;z-index:1200;background:#000d;display:grid;place-items:center;cursor:zoom-out}#lb img{max-width:94vw;max-height:90vh;border:3px solid #fff}
+.ph{border:2px dashed #7f9db9;border-radius:6px;padding:22px;text-align:center;color:#4a6fb5;background:#f4f8ff}
+.pl{display:grid;gap:10px}.pi{border:1px solid #7f9db9;border-radius:6px;padding:12px 16px;background:#fff;cursor:pointer}.pi:hover{background:#eaf1ff;border-color:#316ac5}
+.pi b{display:block;font:700 18px "Trebuchet MS",sans-serif;color:#1c3f94}.pi small{display:block;color:#777;margin:2px 0 6px}.pi span{font-size:14px;color:#333}
+.post p{font:17px/1.75 Georgia,"Times New Roman",serif;margin:0 0 16px}.sub{color:#777}
+.hx{margin-top:26px}.hnow{font-size:13px;margin-top:16px;color:#3a6ea5}
+.ks{display:flex;justify-content:space-between;font-weight:700;margin-top:6px}
+.kb{height:13px;border:1px solid #7f9db9;background:#fff;padding:1px}.kb i{display:block;height:100%;background:repeating-linear-gradient(90deg,#2ec54b 0 7px,#fff 7px 9px)}
+@container (max-width:640px){.facets{grid-template-columns:1fr}}
