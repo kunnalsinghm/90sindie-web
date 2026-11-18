@@ -1,25 +1,26 @@
 {
-  "visits": 24,
+  "visits": 31,
   "views": {
-    "ie": 7,
-    "msn": 4,
+    "ie": 9,
+    "msn": 5,
     "case": 1,
-    "show": 15,
-    "explorer": 6,
-    "resume": 2,
+    "show": 20,
+    "explorer": 7,
+    "resume": 3,
     "note": 3,
-    "paint": 2,
+    "paint": 3,
     "tm": 5,
-    "wmp": 2,
+    "wmp": 3,
     "term": 4,
     "calc": 1,
-    "cred": 2,
+    "cred": 5,
     "mine": 2,
-    "mail": 3,
+    "mail": 5,
     "themes": 1,
     "testi": 1,
     "sol": 1,
-    "disp": 1,
-    "guest": 1
+    "disp": 2,
+    "guest": 1,
+    "links": 1
   }
 }
